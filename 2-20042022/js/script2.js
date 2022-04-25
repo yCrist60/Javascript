@@ -15,10 +15,24 @@ function galeria(){
     abrirNoPainel();
 }
 
-function abrirNoPainel(){
-    document.getElementById("n1").onclick=function(){
-        painel.innerHTML = "<img src=img/n1.jpg>";
-        // somente o sinal de = substitui as img anteriores e soemnte 1 na posição 
-    };
-    
+function abrirNoPainel() {
+document.getElementById("n1").onclick=function(){
+    painel.innerHTML = "<img src=img/n1.jpg>";         
+};
+
+document.getElementById("n2").onclick=function(){
+    painel.innerHTML = "<img src=img/n2.jpg>";         
+};
+
+document.getElementById("n3").onclick=function(){
+    painel.innerHTML = "<img src=img/n3.jpg>";         
+};
+
+document.getElementById("n4").onclick=function(){
+    painel.innerHTML = "<img src=img/n4.jpg>";         
+};
+
+document.getElementById("n5").onclick=function(){
+    painel.innerHTML = "<img src=img/n5.jpg>";         
+};
 }
