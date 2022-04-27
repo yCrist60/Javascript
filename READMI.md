@@ -29,4 +29,4 @@
  </html>   
  ```
  #### Cálculo do CPF em JAvascript
- !["Código de cálculo do CPF"](img/cpf.png)
+ !["Código de cálculo do CPF"](img/cpf.PNG)
