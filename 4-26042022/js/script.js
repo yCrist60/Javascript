@@ -45,7 +45,7 @@ function verificarCPF(){
     else {
         cpfCalc+= 11 - resto;
     }
-
+    
     if(cpfCalc != cpfUsuario){
         alert("CPF incorreto");
     }
@@ -53,3 +53,24 @@ function verificarCPF(){
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
