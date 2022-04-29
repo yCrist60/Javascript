@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#filmes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+}
+
+#filmes div {
+    width: 15%;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #ddd;
+    border: 1px solid #ddd;
+    background-color: white;
+    transition: ease 1.5s;
+}
+
+#filmes div img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.voto{
+    background-color: #000;
+    color: #fff;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: -20px;
+    /* para trazer a bolinha para frente, altere o empilhamento com
+    z-index com valor alto */
+    z-index: 10000;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    border:2px solid greenyellow;
+    box-shadow: 0px 0px 0px 3px black;
+    font-size: 10pt;
+    font-family: arial;
+}
+
+h2{
+    font-family: Verdana;
+    font-size: 12pt;
+    margin: 10px;
+}
+
+.data{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 9pt
+}
+
+#filmes div:hover{
+    cursor:pointer;
+    z-index: 10000;
+    transition: scale(1.5);
+    box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.8);
+}
