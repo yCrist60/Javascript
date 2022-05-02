@@ -1,0 +1,18 @@
+{
+  "name": "usar_modulo",
+  "version": "1.0.0",
+  "description": "Projeto para utilizacao de modulos criados por mim e etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs",
+    "etc"
+  ],
+  "author": "Cristian",
+  "license": "ISC",
+  "dependencies": {
+    "tech-cr-pmn": "^1.0.0"
+  }
+}

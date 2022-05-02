@@ -1,7 +1,7 @@
 // Realizar a consulta de dados dos filmes na API dothemoviedb.
 // Vamos usar o comando Fetch(Buscar|Pesquisar) e ele tem 2 elementos
 // para trabalhar.
-// - then(então) quando o resultado é um erro
+// - then(então) quando o resultado não é um erro
 // - catch(capturar) quando o resultado é um erro.
 function carregarFilmes(){
 
@@ -18,7 +18,7 @@ function carregarFilmes(){
             </div>`;
             filmes+=div;
 
-        })
+        });
         document.body.innerHTML = filmes;
     })
     .catch((erro) => console.error(`Erro ao carregar a API -> ${erro}`));
