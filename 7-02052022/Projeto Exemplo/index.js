@@ -62,15 +62,25 @@ app.post("/cadastro",(req,res) => {
 // que deseja atualizar
 app.put("/atualizar/:id",(req,res) => {
     
-    Cliente.findByIdAndUpdate(req,params.id, res.body{new:true},(erro,dados)=>{
-        if(erro)return res.status(400).send({output: `Erro ao Atualizar->${erro}`});
-        res.status(200).send({output: `Atualizando`, info:dados});
-    })
+    Cliente.findByIdAndUpdate(
+        req.params.id, 
+        req.body, 
+        {new: true }, 
+        (erro, dados)=>{
+         if(erro)
+          return res.status(400).send({output: `Erro ao Atualizar->${erro}`});
+          res.status(200).send({output: `Atualizando`, info: dados});
+    });
 });
 
 // Para deletar um dado iremos usar o verbo DELETE passando o ID
 app.delete("/apagar/:id",(req,res) => {
-    res.status(204).send({ output: `Apagou` }); 
+    
+    Cliente.findByIdAndDelete(req.params.id, (erro,dados)=>{
+        if(erro)
+            return res.status(500).send({outpout: `Erro ao carregar ->${erro}`});
+        res.status(204).send({ outpout: `Apagou`});
+    });
 });
 
 // Definir uma porta de comunicaçã com o servidor d aplcação
